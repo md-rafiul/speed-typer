@@ -102,7 +102,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Difference between arrow function and normal function
+              Difference between global scope and block scope
             </button>
           </h2>
           <div
@@ -112,13 +112,22 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              1. Syntax: The arrow function example above allows a developer to
-              accomplish the same result with fewer lines of code and
-              approximately half the typing. Curly brackets aren’t required if
-              only one expression is present. The above example can also be
-              written like this: let add = (x, y) => x + y; If there’s only one
-              argument, then the parentheses are not required either: let
-              squareNum = x => x * x; What if there are no arguments?
+              The Global scope: <br />
+              A variable exists inside or outside a block. If a variable is
+              declared outside all functions or curly braces ({}), it exists in
+              the global scope. The global variables can be accessed by any line
+              of code in the program, including inside blocks.
+              <br />
+              The Block scope:
+              <br />
+              So far, we’ve seen variables defined with the var keyword. Var can
+              declare a variable either in the global or local scope. The
+              variables that are declared within the block scope are comparable
+              to local ones. They are available within the block that they are
+              defined. The main difference between the local scope and block
+              scope is that the block statements (e.g. if conditions or for
+              loops), don't create a new scope. So the var keyword will not have
+              an effect, because the variables are still in the same scope.
             </div>
           </div>
         </div>
