@@ -159,6 +159,83 @@
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How many ways we can get Undefine values?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              An undefined variable or anything without a value will always
+              return "undefined" in JavaScript. This is not the same as null,
+              despite the fact that both imply an empty state. You'll typically
+              assign a value to a variable after you declare it, but this is not
+              always the case. When a variable is declared or initialized but no
+              value is assigned to it, JavaScript automatically displays
+              "undefined". It looks like this: let myStr; console.log(myStr); //
+              undefined Also, when you try accessing values in, for example, an
+              array or object that doesn’t exist, it will throw undefined. let
+              user = { name: "John Doe", age: 14 }; console.log(user.hobby); //
+              undefined Here's another example: let myArr = [12, 33, 44];
+              console.log(myArr[7]); // undefined In this article, you will
+              learn the various methods and approaches you can use to know if a
+              variable is undefined in JavaScript. This is necessary if you want
+              to avoid your code throwing errors when performing an operation
+              with an undefined variable. In case you are in a rush, here are
+              the three standard methods that can help you check if a variable
+              is undefined in JavaScript: if(myStr === undefined){} if(typeof
+              myArr[7] === "undefined"){} if(user.hobby === void 0){} Let’s now
+              explain each of these methods in more detail. How to Check if a
+              Variable is Undefined in JavaScript with Direct Comparison One of
+              the first methods that comes to mind is direct comparison. This is
+              where you compare the output to see if it returns undefined. You
+              can easily do this in the following way: let user = { name: "John
+              Doe", age: 14 }; if (user.hobby === undefined) { console.log("This
+              is undefined"); } This also works for arrays as you can see below:
+              let scores = [12, 34, 66, 78]; if (scores[10] === undefined) {
+              console.log("This is undefined"); } And it definitely also works
+              for other variables: let name; if (name === undefined) {
+              console.log("This is undefined"); } How to Check if a Variable is
+              Undefined in JavaScript with typeof We can also use the type of
+              the variable to check if it’s undefined. Luckily for us undefined
+              is a datatype for an undefined value as you can see below: let
+              name; console.log(typeof name); // "undefined" With this we can
+              now use the datatype to check undefined for all types of data as
+              we saw above. Here is what the check will look like for all three
+              scenarios we have considered: if(typeof user.hobby ===
+              "undefined"){} if(typeof scores[10] === "undefined"){} if(typeof
+              name === "undefined"){} How to Check if a Variable is Undefined in
+              JavaScript with the Void Operator The void operator is often used
+              to obtain the undefined primitive value. You can do this using
+              "void(0)" which is similar to "void 0" as you can see below:
+              console.log(void 0); // undefined console.log(void(0)); //
+              undefined In the actual sense, this works like direct comparison
+              (which we saw before). But we would replace undefined with void(0)
+              or void 0 as seen below: if(typeof user.hobby === void 0){}
+              if(typeof scores[10] === void 0){} if(typeof name === void 0){} Or
+              like this: if(typeof user.hobby === void(0)){} if(typeof
+              scores[10] === void(0)){} if(typeof name === void(0)){}
+              <a
+                href="https://www.freecodecamp.org/news/javascript-check-if-undefined-how-to-test-for-undefined-in-js/"
+              >
+                Follow this link</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
