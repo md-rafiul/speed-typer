@@ -141,7 +141,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Difference between Filter vs Map vs Find vs Foreach
+              How javascripts event loop works?
             </button>
           </h2>
           <div
@@ -151,13 +151,11 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              The main difference between forEach and filter is that forEach
-              just loop over the array and executes the callback but filter
-              executes the callback and check its return value. And map() goes
-              through all entries then creates a new array using the function
-              supplied. . find() locates a specific entry by a predicate and
-              returns it. They are both "legitimate" in the sense that these are
-              both things that the methods are supposed to do.
+              The Event Loop has one simple job — to monitor the Call Stack and
+              the Callback Queue. If the Call Stack is empty, the Event Loop
+              will take the first event from the queue and will push it to the
+              Call Stack, which effectively runs it. Such an iteration is called
+              a tick in the Event Loop.
             </div>
           </div>
         </div>
